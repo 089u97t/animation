@@ -1,4 +1,4 @@
-body {
+*body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -7,11 +7,10 @@ body {
 
 .hero {
   background-color: #3d82ea;
-  color: #fff;
+  color: #bd7f1c;
   padding: 80px 0;
   text-align: center;
- 
-
+  
 }
 
 
@@ -68,7 +67,7 @@ body {
 
 .action-button {
   display: inline-block;
-  background-color: #fdfcfb;
+  background-color: #ba752f;
   color: #333;
   padding: 15px 30px;
   border-radius: 5px;
@@ -106,7 +105,7 @@ body {
 /* }* */
 
 .navbar {
-  background-color: #f7f6f6;
+  background-color: #fbfaf8;
   color: #090707;
   display: flex;
   justify-content: space-between;
@@ -242,7 +241,7 @@ margin: 8px;
 .about-section {
 padding: 50px;
 text-align: center;
-background-color: #f9fafb;
+background-color: #bd7f1c;
 color: rgb(16, 13, 13);
 }
 
@@ -286,7 +285,7 @@ background-color: #555;
 /* Previous CSS remains unchanged */
 
 .portfolio {
-  background-color: #fbfcfd;
+  background-color: #bd7f1c;
   padding: 80px 0;
   text-align: center;
 }
@@ -385,7 +384,7 @@ input[type=submit]:hover {
 }
 
 .footer {
-  background-color: #f8f8f8;
+  background-color: #bd7f1c;
   color: #080707;
   padding: 50px 0;
 }
