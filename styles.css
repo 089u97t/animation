@@ -15,7 +15,7 @@
 
 
 .navbar ul {
-  list-style: none;
+  list-: none;
   padding: 0;
   margin: 0;
 }
@@ -126,7 +126,7 @@
 }
 
 .nav-links {
-  list-style: none;
+  list-: none;
   padding: -1;
   margin: -1;
   display: flex;
@@ -329,7 +329,7 @@ background-color: #555;
   box-sizing: border-box;
 }
 
-/* Style inputs */
+/*  inputs */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -351,7 +351,7 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-/* Style the container/contact section */
+/*  the container/contact section */
 .contact {
   border-radius: 5px;
   
@@ -373,6 +373,25 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.email, .phone, .location {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-info {
+      flex-direction: row;
+  }
+
+  .email, .phone, .location {
+      margin-bottom: 0;
+      margin-right: 20px;
+  }
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -418,7 +437,7 @@ input[type=submit]:hover {
 }
 
 ul {
-  list-style: none;
+  list-: none;
   padding: 0;
   margin: 0;
 }
