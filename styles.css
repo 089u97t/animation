@@ -15,7 +15,7 @@
 
 
 .navbar ul {
-  list-: none;
+  
   padding: 0;
   margin: 0;
 }
@@ -179,6 +179,12 @@
   .hamburger {
       display: flex;
   }
+  .container{
+    flex-direction: column;
+  }
+
+  
+  
 } 
 
 
@@ -246,10 +252,10 @@ color: rgb(16, 13, 13);
 }
 
 .container {
-padding: 0 16px;
+padding:  16px;
 }
 
-.container::after, .row::after {
+.container {
 content: "";
 clear: both;
 display: table;
@@ -280,6 +286,14 @@ background-color: #555;
   width: 100%;
   display: block;
 }
+.portfolio{
+  flex-direction: row;
+}
+}
+a{
+  text-decoration: none;
+  color: #000;
+  
 }
 
 /* Previous CSS remains unchanged */
@@ -464,4 +478,84 @@ ul li a {
 
 .animated-button:hover {
   transform: scale(1.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 14px;
+      line-height: 1.5;
+  }
+  
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+  }
+
+  .nav-links li {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+  .hamburger.active + .nav-links {
+      display: flex;
+  }
+
+  .hero-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .hero-content .text {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .about-section, .about-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .about-content .text, .about-content .graphic {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .column3 {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .card {
+      margin-bottom: 20px;
+  }
+
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-content > div {
+      margin-bottom: 20px;
+      width: 100%;
+  }
 }
