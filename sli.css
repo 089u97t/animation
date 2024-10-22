@@ -679,7 +679,53 @@ transition: width 0.6s ease-out;
 }
 
 
-
+.containers {
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+h1 {
+  text-align: center;
+  color: #333;
+  padding: 20px 0;
+  margin: 0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+#map {
+  height: 400px;
+  width: 100%;
+}
+.button-containers {
+  padding: 20px;
+  text-align: center;
+}
+#find-me {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+#find-me:hover {
+  background-color: #45a049;
+}
+#status {
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  color: #666;
+}
 
 /* @import url('https://fonts.googlepis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 *{
